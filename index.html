@@ -8,6 +8,28 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Dominic International Trading Co. (DITC)",
+  "description": "Exporters of agricultural machinery, farm implements and fair & bio products from India to clients worldwide.",
+  "email": "contact@ditc.in",
+  "telephone": "+91-98949-29757",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "132, Anthoniar Kovil St.",
+    "addressLocality": "Thoothukudi",
+    "postalCode": "628002",
+    "addressRegion": "Tamil Nadu",
+    "addressCountry": "IN"
+  },
+  "contactPoint": [
+    { "@type": "ContactPoint", "contactType": "sales", "email": "contact@ditc.in", "telephone": "+91-98949-29757", "areaServed": "Worldwide" },
+    { "@type": "ContactPoint", "contactType": "customer support", "email": "dominicinternational.in@gmail.com", "areaServed": "Worldwide" }
+  ]
+}
+</script>
 <style>
   :root{
     --navy:#1b2a6b;
@@ -153,6 +175,9 @@
   .c-ic svg{transform:rotate(-45deg);width:20px;height:20px;stroke:var(--gold-bright)}
   .c-label{font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);display:block}
   .c-val{font-size:1.05rem;font-weight:400;transition:color .25s}
+  .c-mails{display:flex;flex-direction:column;gap:.25rem}
+  .c-mails a{color:var(--cream);text-decoration:none;font-size:1.05rem;line-height:1.45;word-break:break-word;transition:color .25s}
+  .c-mails a:hover{color:var(--gold-bright)}
   .contact-card{background:var(--navy);border:1px solid var(--gold);padding:3rem 2.6rem;text-align:center;position:relative}
   .contact-card::before{content:"";position:absolute;inset:9px;border:1px solid rgba(201,162,63,.35);pointer-events:none}
   .contact-card svg{width:110px;height:110px;margin:0 auto 1.2rem}
@@ -164,6 +189,9 @@
   /* ---------- footer ---------- */
   footer{background:var(--navy-ink);border-top:1px solid rgba(201,162,63,.35);color:rgba(247,243,232,.6);text-align:center;padding:2rem 1.5rem;font-size:.8rem;letter-spacing:.14em}
   footer b{color:var(--gold);font-weight:500}
+  footer a{color:rgba(247,243,232,.75);text-decoration:none;transition:color .25s}
+  footer a:hover{color:var(--gold-bright)}
+  footer .f-mail{display:block;margin-top:.7rem;word-break:break-word}
 
   /* ---------- reveal animation ---------- */
   .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
@@ -189,6 +217,7 @@
     .hero-frame{padding:2.2rem 1.4rem}
     section{padding:4rem 1.2rem}
     .about-img img{height:340px}
+    .c-mails a{font-size:.92rem}
   }
 </style>
 </head>
@@ -501,10 +530,13 @@
         <span class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg></span>
         <span><span class="c-label">Phone / WhatsApp</span><span class="c-val">+91 98949 29757</span></span>
       </a>
-      <a class="c-line" href="mailto:dominicinternationaltradingco@gmail.com">
+      <div class="c-line">
         <span class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
-        <span><span class="c-label">Email</span><span class="c-val">dominicinternationaltradingco@gmail.com</span></span>
-      </a>
+        <span><span class="c-label">Email</span><span class="c-mails">
+          <a href="mailto:contact@ditc.in">contact@ditc.in</a>
+          <a href="mailto:dominicinternational.in@gmail.com">dominicinternational.in@gmail.com</a>
+        </span></span>
+      </div>
       <div class="c-line">
         <span class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
         <span><span class="c-label">Address</span><span class="c-val">132, Anthoniar Kovil St., Thoothukudi – 628 002,<br>Tamil Nadu, India</span></span>
@@ -535,6 +567,7 @@
 
 <footer>
   <b>DITC</b> &nbsp;·&nbsp; Import · Export · Trade &nbsp;·&nbsp; Thoothukudi, Tamil Nadu, India
+  <span class="f-mail"><a href="mailto:contact@ditc.in">contact@ditc.in</a> &nbsp;·&nbsp; <a href="mailto:dominicinternational.in@gmail.com">dominicinternational.in@gmail.com</a> &nbsp;·&nbsp; <a href="tel:+919894929757">+91 98949 29757</a></span>
 </footer>
 
 <script>
