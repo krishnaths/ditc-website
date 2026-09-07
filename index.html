@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,7 +62,7 @@
   header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(20,31,82,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,162,63,.35);transition:box-shadow .3s}
   .nav{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:.65rem 1.5rem}
   .brand{display:flex;align-items:center;gap:.8rem;text-decoration:none}
-  .brand svg{width:52px;height:52px}
+  .brand svg,.brand .brand-mark{width:52px;height:52px;display:block}
   .brand-name{color:var(--cream);font-family:var(--serif);font-size:1.25rem;font-weight:600;letter-spacing:.06em;line-height:1.2}
   .brand-tag{color:var(--gold);font-size:.6rem;letter-spacing:.34em;text-transform:uppercase;font-weight:500}
   nav ul{display:flex;gap:2rem;list-style:none}
@@ -180,7 +182,7 @@
   .c-mails a:hover{color:var(--gold-bright)}
   .contact-card{background:var(--navy);border:1px solid var(--gold);padding:3rem 2.6rem;text-align:center;position:relative}
   .contact-card::before{content:"";position:absolute;inset:9px;border:1px solid rgba(201,162,63,.35);pointer-events:none}
-  .contact-card svg{width:110px;height:110px;margin:0 auto 1.2rem}
+  .contact-card svg,.contact-card .brand-mark{width:110px;height:110px;margin:0 auto 1.2rem;display:block}
   .contact-card .cc-name{font-family:var(--serif);font-size:1.7rem;font-weight:600;color:#fff;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.4rem .75rem}
   .contact-card .cc-role{color:var(--gold-bright);font-style:italic;font-family:var(--serif);font-size:1.1rem;margin-bottom:1.2rem}
   .cc-actions{display:inline-flex;gap:.45rem;vertical-align:middle}
@@ -232,20 +234,7 @@
 <header>
   <div class="nav">
     <a class="brand" href="#top" aria-label="DITC home">
-      <svg viewBox="0 0 120 120" fill="none" aria-hidden="true">
-        <circle cx="60" cy="60" r="52" stroke="#c9a23f" stroke-width="2.5"/>
-        <circle cx="60" cy="60" r="44" stroke="#c9a23f" stroke-width="1" stroke-dasharray="2 4"/>
-        <circle cx="60" cy="8" r="3" fill="#c9a23f"/>
-        <circle cx="60" cy="112" r="3" fill="#c9a23f"/>
-        <circle cx="8" cy="60" r="2.4" fill="#c9a23f"/>
-        <circle cx="112" cy="60" r="2.4" fill="#c9a23f"/>
-        <path d="M42 46 L78 46 L71 54 L49 54 Z" fill="#c9a23f"/>
-        <rect x="52" y="38" width="5" height="7" fill="#c9a23f"/>
-        <rect x="59" y="35" width="5" height="10" fill="#c9a23f"/>
-        <rect x="66" y="38" width="5" height="7" fill="#c9a23f"/>
-        <text x="60" y="82" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="27" font-weight="600" letter-spacing="2" fill="#c9a23f">DITC</text>
-        <path d="M57 90 L60 87 L63 90 L60 93 Z" fill="#c9a23f"/>
-      </svg>
+      <img class="brand-mark" src="images/logo-mark.png" alt="" aria-hidden="true">
       <span>
         <span class="brand-name">DITC</span><br>
         <span class="brand-tag">Import · Export · Trade</span>
@@ -548,20 +537,7 @@
       </div>
     </div>
     <div class="contact-card reveal">
-      <svg viewBox="0 0 120 120" fill="none" aria-hidden="true">
-        <circle cx="60" cy="60" r="52" stroke="#c9a23f" stroke-width="2.5"/>
-        <circle cx="60" cy="60" r="44" stroke="#c9a23f" stroke-width="1" stroke-dasharray="2 4"/>
-        <circle cx="60" cy="8" r="3" fill="#c9a23f"/>
-        <circle cx="60" cy="112" r="3" fill="#c9a23f"/>
-        <circle cx="8" cy="60" r="2.4" fill="#c9a23f"/>
-        <circle cx="112" cy="60" r="2.4" fill="#c9a23f"/>
-        <path d="M42 46 L78 46 L71 54 L49 54 Z" fill="#c9a23f"/>
-        <rect x="52" y="38" width="5" height="7" fill="#c9a23f"/>
-        <rect x="59" y="35" width="5" height="10" fill="#c9a23f"/>
-        <rect x="66" y="38" width="5" height="7" fill="#c9a23f"/>
-        <text x="60" y="82" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="27" font-weight="600" letter-spacing="2" fill="#c9a23f">DITC</text>
-        <path d="M57 90 L60 87 L63 90 L60 93 Z" fill="#c9a23f"/>
-      </svg>
+      <img class="brand-mark" src="images/logo-mark.png" alt="" aria-hidden="true">
       <div class="cc-name">Dominic Dilip<span class="cc-actions">
         <a href="tel:+919894929757" aria-label="Call Dominic Dilip" title="Call +91 98949 29757"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg></a>
         <a href="mailto:contact@ditc.in" aria-label="Email Dominic Dilip" title="Email contact@ditc.in"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></a>
