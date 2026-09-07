@@ -181,8 +181,13 @@
   .contact-card{background:var(--navy);border:1px solid var(--gold);padding:3rem 2.6rem;text-align:center;position:relative}
   .contact-card::before{content:"";position:absolute;inset:9px;border:1px solid rgba(201,162,63,.35);pointer-events:none}
   .contact-card svg{width:110px;height:110px;margin:0 auto 1.2rem}
-  .contact-card .cc-name{font-family:var(--serif);font-size:1.7rem;font-weight:600;color:#fff}
+  .contact-card .cc-name{font-family:var(--serif);font-size:1.7rem;font-weight:600;color:#fff;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.4rem .75rem}
   .contact-card .cc-role{color:var(--gold-bright);font-style:italic;font-family:var(--serif);font-size:1.1rem;margin-bottom:1.2rem}
+  .cc-actions{display:inline-flex;gap:.45rem;vertical-align:middle}
+  .cc-actions a{width:30px;height:30px;border:1px solid var(--gold);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;transition:background .25s,border-color .25s}
+  .cc-actions a:hover,.cc-actions a:focus-visible{background:var(--gold);border-color:var(--gold-bright);outline:none}
+  .contact-card .cc-actions svg{width:15px;height:15px;margin:0;stroke:var(--gold-bright);transition:stroke .25s}
+  .cc-actions a:hover svg,.cc-actions a:focus-visible svg{stroke:var(--navy-ink)}
   .contact-card .diamonds{margin:1.4rem 0}
   .contact-card .cc-tag{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(247,243,232,.75)}
 
@@ -267,7 +272,7 @@
       <div class="diamonds"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
       <p class="eyebrow" style="margin-top:1.4rem">Import · Export · Trade</p>
       <h1>From Indian Soil<br>to <em>Global Markets</em></h1>
-      <p class="lede">Exporters of agricultural machinery, farm implements and fair &amp; bio products — connecting buyers and sellers worldwide from the port city of Thoothukudi, India.</p>
+      <p class="lede">Exporters of agricultural machinery, farm implements and fair &amp; bio products — connecting markets and creating value from the port city of Thoothukudi, India.</p>
       <div class="btn-row">
         <a class="btn btn-gold" href="#machinery">Explore Products</a>
         <a class="btn btn-ghost" href="#contact">Get In Touch</a>
@@ -313,7 +318,7 @@
 <div class="cat-band reveal">
   <p class="eyebrow">Division 01</p>
   <h2>Agricultural Machinery</h2>
-  <p>Field-proven tractors, tillers and harvesting machines built for hard land and long hours.</p>
+  <p>Field-proven tractors, tillers and weeders built for hard land and long hours.</p>
 </div>
 <section class="machinery" id="machinery">
   <div class="wrap">
@@ -335,11 +340,11 @@
         </div>
       </article>
       <article class="card reveal">
-        <div class="card-img"><img src="images/harvester.jpg" alt="Combine harvester in a wheat field" loading="lazy"></div>
+        <div class="card-img"><img src="images/weeder.jpg" alt="Tractor-mounted inter-row weeder working a green crop" loading="lazy"></div>
         <div class="card-body">
-          <h3>Harvesters &amp; Field Machines</h3>
-          <p>Combine harvesters, reapers, mulchers and planters that take crops from standing field to clean grain — matched to the buyer's crop and acreage.</p>
-          <div class="card-tags"><span>Combines</span><span>Reapers</span><span>Planters</span></div>
+          <h3>Weeders</h3>
+          <p>Power weeders, rotary and cono weeders and tractor-mounted inter-row models that clear weeds between standing rows without disturbing the crop — matched to the buyer's row spacing and soil.</p>
+          <div class="card-tags"><span>Power</span><span>Rotary</span><span>Inter-row</span></div>
         </div>
       </article>
     </div>
@@ -472,7 +477,7 @@
 <section class="reach" id="reach">
   <div class="wrap">
     <div class="diamonds reveal"><span></span><span></span><span></span><span></span><span></span></div>
-    <p class="eyebrow reveal" style="margin-top:1.2rem">Connecting Buyers &amp; Sellers Worldwide</p>
+    <p class="eyebrow reveal" style="margin-top:1.2rem">Connecting Markets. Creating Value</p>
     <h2 class="reveal">Our Clients Span the Globe</h2>
     <p class="sub reveal">From the docks of Thoothukudi, our consignments sail to partners across six regions — with full export documentation, inspection certificates and freight handled door to door.</p>
     <div class="regions reveal">
@@ -557,17 +562,20 @@
         <text x="60" y="82" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="27" font-weight="600" letter-spacing="2" fill="#c9a23f">DITC</text>
         <path d="M57 90 L60 87 L63 90 L60 93 Z" fill="#c9a23f"/>
       </svg>
-      <div class="cc-name">Dominic Dilip</div>
+      <div class="cc-name">Dominic Dilip<span class="cc-actions">
+        <a href="tel:+919894929757" aria-label="Call Dominic Dilip" title="Call +91 98949 29757"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg></a>
+        <a href="mailto:contact@ditc.in" aria-label="Email Dominic Dilip" title="Email contact@ditc.in"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></a>
+      </span></div>
       <div class="cc-role">Proprietor</div>
       <div class="diamonds"><span></span><span></span><span></span><span></span><span></span></div>
-      <div class="cc-tag">Connecting Buyers &amp; Sellers Worldwide</div>
+      <div class="cc-tag">Connecting Markets. Creating Value</div>
     </div>
   </div>
 </section>
 
 <footer>
   <b>DITC</b> &nbsp;·&nbsp; Import · Export · Trade &nbsp;·&nbsp; Thoothukudi, Tamil Nadu, India
-  <span class="f-mail"><a href="mailto:contact@ditc.in">contact@ditc.in</a> &nbsp;·&nbsp; <a href="mailto:dominicinternational.in@gmail.com">dominicinternational.in@gmail.com</a> &nbsp;·&nbsp; <a href="tel:+919894929757">+91 98949 29757</a></span>
+  <span class="f-mail"><a href="mailto:contact@ditc.in">contact@ditc.in</a> &nbsp;/&nbsp; <a href="mailto:dominicinternational.in@gmail.com">dominicinternational.in@gmail.com</a> &nbsp;·&nbsp; <a href="tel:+919894929757">+91 98949 29757</a></span>
 </footer>
 
 <script>
